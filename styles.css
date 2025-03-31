@@ -3,3 +3,15 @@ body {
     background: rgb(6, 8, 15) ;
     text-align: left;
 }
+nav {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: flex-end; /* Aligns navigation items to the right horizontally */
+    align-items: center; /* Vertically aligns items (makes them upright) */
+    height: 60px; /* Set navigation height */
+    padding: 10px;
+}
+nav {
+    position: fixed; /* Keeps navigation at the top */
+    top: 0;
+    width: 75%; /* Ensures the nav spans the full width */
+}
