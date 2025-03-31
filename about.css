@@ -3,6 +3,7 @@ body {
     background: rgb(6, 8, 15) ;
     text-align: left;
 }
+
 nav {
     display: flex; /* Use Flexbox for alignment */
     justify-content: flex-end; /* Aligns navigation items to the right horizontally */
@@ -15,6 +16,7 @@ nav {
     top: 0;
     width: 94%; /* Ensures the nav spans the full width */
 }
+
 hr {
   border: none;
   border-top: 3px double #333;
@@ -28,4 +30,17 @@ hr::after {
   padding: 0 4px;
   position: relative;
   top: -13px;
+}
+
+.news {
+  background: rgb(87, 195, 45) ;
+  padding: 1em;
+  border: solid thin white;
+}
+menu {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+  gap: 1em;
 }
