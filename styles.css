@@ -13,5 +13,5 @@ nav {
 nav {
     position: fixed; /* Keeps navigation at the top */
     top: 0;
-    width: 75%; /* Ensures the nav spans the full width */
+    width: 90%; /* Ensures the nav spans the full width */
 }
