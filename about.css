@@ -44,3 +44,9 @@ menu {
   margin-bottom: 0;
   gap: 1em;
 }
+
+footer {
+    display: flex; 
+    justify-content: center;
+    padding: 5px;
+}
