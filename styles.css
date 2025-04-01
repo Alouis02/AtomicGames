@@ -8,7 +8,7 @@ nav {
     display: flex; /* Use Flexbox for alignment */
     justify-content: flex-end; /* Aligns navigation items to the right horizontally */
     align-items: center; /* Vertically aligns items (makes them upright) */
-    height: 60px; /* Set navigation height */
+    height: 65px; /* Set navigation height */
     padding: 10px;
 }
 nav {
