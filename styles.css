@@ -1,20 +1,35 @@
-body {
+body, html {
     margin: 0;
-    background: rgb(10, 128, 133) ;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(10, 128, 133);
     text-align: left;
 }
 
-nav {
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: flex-end; /* Aligns navigation items to the right horizontally */
-    align-items: center; /* Vertically aligns items (makes them upright) */
-    height: 65px; /* Set navigation height */
-    padding: 10px;
+header {
+    padding: 1rem;
 }
+
 nav {
-    position: fixed; /* Keeps navigation at the top */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65px;
+    padding: 10px;
+    position: fixed;
     top: 0;
-    width: 94%; /* Ensures the nav spans the full width */
+    width: 94%;
+    background: rgb(10, 128, 133); /* Match the body background color */
+}
+
+menu {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    gap: 1em;
 }
 
 hr {
@@ -24,7 +39,9 @@ hr {
     overflow: visible;
     text-align: center;
     height: 5px;
+    margin-top: 70px; /* Space below the fixed nav */
 }
+
 hr::after {
     background: #fff;
     padding: 0 4px;
@@ -33,20 +50,21 @@ hr::after {
 }
 
 .news {
-    background: rgb(87, 195, 45) ;
+    background: rgb(87, 195, 45);
     padding: 1em;
     border: solid thin white;
 }
-menu {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin-bottom: 0;
-    gap: 1em;
+
+main {
+    flex: 1; /* Take remaining space to push the footer down */
+    margin-top: 70px; /* Offset for the fixed navigation */
 }
 
 footer {
-    display: flex; 
+    display: flex;
     justify-content: center;
     padding: 5px;
+    margin-top: auto; /* Stick to the bottom */
+    background-color: #004f54;
+    color: white;
 }
