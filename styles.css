@@ -23,27 +23,20 @@ nav {
 }
 
 /* Styling for horizontal rule */
+/* Styling for horizontal rule */
 hr {
-    display: block;
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
+    border: none;
+    border-top: 3px double #333;
     color: #333;
     overflow: visible;
     text-align: center;
+    height: 5px;
 }
-
-/* Menu styling */
-menu {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin-bottom: 0;
-    gap: 1em;
+hr::after {
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
 }
 
 /* Main styling */
