@@ -2,31 +2,54 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(10, 128, 137);
-    /* Set background color */
+    background: #1b1b2f; /* Dark background for gaming feel */
+    color: white;
+    font-family: Arial, sans-serif;
     text-align: left;
-    min-height: 100%;
-    /* Ensure body takes up full height */
+    min-height: 100%; /* Ensure body takes up full height */
     display: flex;
-    /* Use flexbox layout */
     flex-direction: column;
-    /* Stack elements vertically */
 }
 
 /* Navigation bar styling */
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    height: 65px;
-    padding: 10px 3%;
-    /* Adjust padding to reduce overflow */
+    background: #0f3460; /* Dark blue navigation bar */
+    padding: 20px;
     position: fixed;
     top: 0;
-    width: 100%;
-    /* Set width to 100% to avoid overflow */
+    width: 100%; /* Set width to 100% to avoid overflow */
     box-sizing: border-box;
-    /* Includes padding in width calculation */
+}
+
+/* Navigation buttons */
+nav button {
+    background: #16213e;
+    color: white;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background: #e94560;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #0f3460;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
 }
 
 /* Styling for horizontal rule */
@@ -55,12 +78,32 @@ menu {
     gap: 1em;
 }
 
-/* Main styling */
+/* Main content area styling */
 main {
-    min-height: 200vh;
-    /* Ensures the main content takes up most of the viewport */
-    padding: 10px;
-    /* Adds some spacing inside the main area */
+    min-height: 200vh; /* Ensures the main content takes up most of the viewport */
+    padding: 20px;
+}
+
+/* Game grid layout */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Game card styling */
+.game-card {
+    background: #16213e;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    background: #e94560;
 }
 
 /* Footer styling */
@@ -70,9 +113,6 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #004f54;
-    /* Add background color to footer */
     color: white;
-    /* Text color */
     margin-top: auto;
-    /* Pushes the footer to the bottom */
 }
