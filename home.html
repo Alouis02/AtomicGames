@@ -1,4 +1,3 @@
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,44 +9,36 @@
             window.location.href = pageUrl; // Redirects to the specified page
         }
     </script>
+    <script src="/AtomicGames/assets/redirect.js">You will be redirected to the main site shortly</script>
 </head>
 <body>
     <header>
-        <h1 style="color: white; font-size: 55px;">Atomic Games</h1>
+        <h1 style="color: white;">Atomic Games</h1>
         <p style="color: white;"></p>
         <hr />
     </header>
-    <h1 style="color: white; font-size: 55px;">Home</h1>
+    <h2 style="color: white;">Home</h2>
     <p style="color: white;"></p>
     <main>
         <article>
             <section>
-                <body>
-                    <canvas id="myCanvas" width="200" height="75" style="border: 2px solid white;"></canvas>
-                    <script>
-                        const canvas = document.getElementById("myCanvas");
-                        const ctx = canvas.getContext("2d");
-                    
-                        // Draw the white rectangle
-                        ctx.fillRect(10, 20, 180, 35); // Rectangle with padding from edges
-                        // Add centered text inside the rectangle
-                        ctx.font = "20px Arial";
-                        ctx.textAlign = "center"; // Center horizontally
-                        ctx.textBaseline = "middle"; // Center vertically
-                        ctx.fillText("The Archer", 100, 38); // Center point of the rectangle
-                        ctx.fillText("Coming Soon!!!!!", 100, 38); // Center point of the rectangle
-                        /*
-                        <h1 style="color: white;">The Archer</h1>
-                        <h2 style="color: white;">Coming Soon!!!!!</h2>
-                        */
-                    </script>
-                </body>
+                <h2 style="color: white;">The Archer</h2>
+                <canvas id="myCanvas" width="200" height="75" style="border: 2px solid white;"></canvas>
+                <script>
+                    const canvas = document.getElementById("myCanvas");
+                    const ctx = canvas.getContext("2d");
+                    // Draw the white rectangle
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(20, 20, 160, 35); // Rectangle positioned at (20, 20) with width 160 and height 35
+                    // Add centered text inside the rectangle
+                    ctx.fillStyle = "white";
+                    ctx.textAlign = "center"; // Center horizontally
+                    ctx.textBaseline = "middle"; // Center vertically
+                    ctx.fillText("Coming Soon!!!!!", 100, 38); // Center point of the rectangle
+                </script>
             </section>
         </article>
     </main>
-    <footer>
-        <p>&copy; 2025 Atomic Games. All Rights Reserved.</p>
-    </footer>
     <!-- Navigation -->
     <nav>
         <menu>
@@ -57,5 +48,8 @@
             </li>
         </menu>
     </nav>
+    <footer>
+        <p>&copy; 2025 Atomic Games. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
