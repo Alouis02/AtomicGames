@@ -1,12 +1,16 @@
 /* General body styling */
-body { 
+body {
     margin: 0;
     padding: 0;
-    background: rgb(10, 128, 137); /* Set background color */
+    background: rgb(10, 128, 137);
+    /* Set background color */
     text-align: left;
-    min-height: 100%; /* Ensure body takes up full height */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack elements vertically */
+    min-height: 100%;
+    /* Ensure body takes up full height */
+    display: flex;
+    /* Use flexbox layout */
+    flex-direction: column;
+    /* Stack elements vertically */
 }
 
 /* Navigation bar styling */
@@ -15,11 +19,14 @@ nav {
     justify-content: flex-end;
     align-items: center;
     height: 65px;
-    padding: 10px 3%; /* Adjust padding to reduce overflow */
+    padding: 10px 3%;
+    /* Adjust padding to reduce overflow */
     position: fixed;
     top: 0;
-    width: 100%; /* Set width to 100% to avoid overflow */
-    box-sizing: border-box; /* Includes padding in width calculation */
+    width: 100%;
+    /* Set width to 100% to avoid overflow */
+    box-sizing: border-box;
+    /* Includes padding in width calculation */
 }
 
 /* Styling for horizontal rule */
@@ -31,6 +38,7 @@ hr {
     text-align: center;
     height: 5px;
 }
+
 hr::after {
     background: #fff;
     padding: 0 4px;
@@ -49,8 +57,10 @@ menu {
 
 /* Main styling */
 main {
-    min-height: 200vh; /* Ensures the main content takes up most of the viewport */
-    padding: 10px; /* Adds some spacing inside the main area */
+    min-height: 200vh;
+    /* Ensures the main content takes up most of the viewport */
+    padding: 10px;
+    /* Adds some spacing inside the main area */
 }
 
 /* Footer styling */
@@ -59,7 +69,10 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background-color: #004f54; /* Add background color to footer */
-    color: white; /* Text color */
-    margin-top: auto; /* Pushes the footer to the bottom */
+    background-color: #004f54;
+    /* Add background color to footer */
+    color: white;
+    /* Text color */
+    margin-top: auto;
+    /* Pushes the footer to the bottom */
 }
