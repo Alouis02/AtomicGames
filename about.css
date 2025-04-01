@@ -1,10 +1,6 @@
-body, html {
+merge this body {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: rgb(10, 128, 133);
+    background: rgb(10, 128, 133) ;
     text-align: left;
 }
 
@@ -22,31 +18,31 @@ nav {
 }
 
 hr {
-  border: none;
-  border-top: 3px double #333;
-  color: #333;
-  overflow: visible;
-  text-align: center;
-  height: 5px;
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
 }
 hr::after {
-  background: #fff;
-  padding: 0 4px;
-  position: relative;
-  top: -13px;
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
 }
 
 .news {
-  background: rgb(87, 195, 45) ;
-  padding: 1em;
-  border: solid thin white;
+    background: rgb(87, 195, 45) ;
+    padding: 1em;
+    border: solid thin white;
 }
 menu {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-  margin-bottom: 0;
-  gap: 1em;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    gap: 1em;
 }
 
 footer {
