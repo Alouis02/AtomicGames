@@ -11,14 +11,15 @@ body {
 
 /* Navigation bar styling */
 nav {
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: flex-end; /* Aligns navigation items to the right horizontally */
-    align-items: center; /* Vertically aligns items (makes them upright) */
-    height: 65px; /* Set navigation height */
-    padding: 10px;
-    position: fixed; /* Keeps navigation at the top */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65px;
+    padding: 10px 3%; /* Adjust padding to reduce overflow */
+    position: fixed;
     top: 0;
-    width: 94%; /* Ensures the nav spans the full width */
+    width: 100%; /* Set width to 100% to avoid overflow */
+    box-sizing: border-box; /* Includes padding in width calculation */
 }
 
 /* Styling for horizontal rule */
