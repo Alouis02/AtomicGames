@@ -2,7 +2,7 @@
 body { 
     margin: 0;
     padding: 0;
-    background: rgb(10, 128, 133); /* Set background color */
+    background: rgb(10, 128, 137); /* Set background color */
     text-align: left;
     min-height: 100%; /* Ensure body takes up full height */
     display: flex; /* Use flexbox layout */
@@ -38,13 +38,6 @@ hr::after {
     top: -13px;
 }
 
-/* News section styling */
-.news {
-    background: rgb(87, 195, 45);
-    padding: 1em;
-    border: solid thin white;
-}
-
 /* Menu styling */
 menu {
     list-style-type: none;
@@ -56,8 +49,8 @@ menu {
 
 /* Main styling */
 main {
-    min-height: 80vh; /* Ensures the main content takes up most of the viewport */
-    padding: 20px; /* Adds some spacing inside the main area */
+    min-height: 200vh; /* Ensures the main content takes up most of the viewport */
+    padding: 10px; /* Adds some spacing inside the main area */
 }
 
 /* Footer styling */
@@ -69,5 +62,4 @@ footer {
     background-color: #004f54; /* Add background color to footer */
     color: white; /* Text color */
     margin-top: auto; /* Pushes the footer to the bottom */
-    width: 100%; /* Ensures the footer spans the full width */
 }
