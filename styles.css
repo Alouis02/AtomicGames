@@ -10,31 +10,15 @@ body {
 }
 
 /* Navigation bar styling */
-
-/*
-nav {
-    display: flex; /* Use Flexbox for alignment *
-    justify-content: flex-end; /* Aligns navigation items to the right horizontally *
-    align-items: center; /* Vertically aligns items (makes them upright) *
-    height: 65px; /* Set navigation height *
-    padding: 10px;
-    position: fixed; /* Keeps navigation at the top *
-    top: 0;
-    width: 100%; /* Ensures the nav spans the full width *
-    background-color: #004f54; /* Background color for navigation *
-}
-*/
-
 nav {
     display: flex; /* Use Flexbox for alignment */
-    justify-content: space-between; /* Space between title and buttons */
-    align-items: center; /* Vertically align items */
+    justify-content: flex-end; /* Aligns navigation items to the right horizontally */
+    align-items: center; /* Vertically aligns items (makes them upright) */
     height: 65px; /* Set navigation height */
-    padding: 10px 20px; /* Add padding for spacing */
+    padding: 10px;
     position: fixed; /* Keeps navigation at the top */
     top: 0;
-    width: 100%; /* Ensures the nav spans the full width */
-    background-color: #008385; /* Background color for navigation */
+    width: 94%; /* Ensures the nav spans the full width */
 }
 
 /* Styling for horizontal rule */
@@ -67,7 +51,7 @@ menu {
     display: flex;
     padding: 0;
     margin-bottom: 0;
-    gap: 0.5em; /* Space between buttons */
+    gap: 1em;
 }
 
 /* Footer styling */
