@@ -17,7 +17,7 @@ nav {
     justify-content: center;
     align-items: center;
     background: #0f3460; /* Dark blue navigation bar */
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     top: 0;
     width: 100%; /* Set width to 100% to avoid overflow */
@@ -28,10 +28,10 @@ nav {
 nav button {
     background: #16213e;
     color: white;
-    margin: 0 5px;
-    padding: 15px 20px;
+    margin: 0 4px;
+    padding: 8px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 100px;
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -43,7 +43,7 @@ nav button:hover {
 /* Header styling */
 header {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
     background: #0f3460;
 }
 
