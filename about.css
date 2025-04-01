@@ -1,22 +1,27 @@
-merge this body {
+/* General body styling */
+body { 
     margin: 0;
-    background: rgb(10, 128, 133) ;
+    padding: 0;
+    background: rgb(10, 128, 133); /* Set background color */
     text-align: left;
+    min-height: 100%; /* Ensure body takes up full height */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
 }
 
+/* Navigation bar styling */
 nav {
     display: flex; /* Use Flexbox for alignment */
     justify-content: flex-end; /* Aligns navigation items to the right horizontally */
     align-items: center; /* Vertically aligns items (makes them upright) */
     height: 65px; /* Set navigation height */
     padding: 10px;
-}
-nav {
     position: fixed; /* Keeps navigation at the top */
     top: 0;
     width: 94%; /* Ensures the nav spans the full width */
 }
 
+/* Styling for horizontal rule */
 hr {
     border: none;
     border-top: 3px double #333;
@@ -25,6 +30,7 @@ hr {
     text-align: center;
     height: 5px;
 }
+
 hr::after {
     background: #fff;
     padding: 0 4px;
@@ -32,11 +38,14 @@ hr::after {
     top: -13px;
 }
 
+/* News section styling */
 .news {
-    background: rgb(87, 195, 45) ;
+    background: rgb(87, 195, 45);
     padding: 1em;
     border: solid thin white;
 }
+
+/* Menu styling */
 menu {
     list-style-type: none;
     display: flex;
@@ -45,11 +54,12 @@ menu {
     gap: 1em;
 }
 
+/* Footer styling */
 footer { 
     display: flex;
     justify-content: center;
     padding: 5px;
-    background-color: #004f54; /* Add background color if needed */
+    background-color: #004f54; /* Add background color to footer */
     color: white; /* Text color */
     margin-top: auto; /* Pushes the footer to the bottom */
 }
