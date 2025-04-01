@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(10, 128, 133); /* Set background color */
-    text-align: left;
+    text-align: left; 
     min-height: 100%; /* Ensure body takes up full height */
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack elements vertically */
