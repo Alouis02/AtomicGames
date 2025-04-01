@@ -24,22 +24,23 @@
             <section>
                 <body>
                     <canvas id="myCanvas" width="200" height="75" style="border: 2px solid white;"></canvas>
-                    <h1 style="color: white;">The Archer</h1>
-                    <h2 style="color: white;">Coming Soon!!!!!</h2>
                     <script>
                         const canvas = document.getElementById("myCanvas");
                         const ctx = canvas.getContext("2d");
                     
                         // Draw the white rectangle
-                        ctx.fillStyle = "white";
                         ctx.fillRect(10, 20, 180, 35); // Rectangle with padding from edges
-                    
                         // Add centered text inside the rectangle
                         ctx.font = "20px Arial";
                         ctx.fillStyle = "black";
                         ctx.textAlign = "center"; // Center horizontally
                         ctx.textBaseline = "middle"; // Center vertically
                         ctx.fillText("The Archer", 100, 38); // Center point of the rectangle
+                        ctx.fillText("Coming Soon!!!!!", 100, 38); // Center point of the rectangle
+                        /*
+                        <h1 style="color: white;">The Archer</h1>
+                        <h2 style="color: white;">Coming Soon!!!!!</h2>
+                        */
                     </script>
                 </body>
             </section>
