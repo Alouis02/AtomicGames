@@ -45,8 +45,11 @@ menu {
     gap: 1em;
 }
 
-footer {
-    display: flex; 
+footer { 
+    display: flex;
     justify-content: center;
     padding: 5px;
+    background-color: #004f54; /* Add background color if needed */
+    color: white; /* Text color */
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
