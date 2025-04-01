@@ -115,4 +115,16 @@ footer {
     background-color: #0f3460;
     color: white;
     margin-top: auto;
+  	background-color: 0f3460;
+  	animation-name: example;
+  	animation-duration: 5s;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:Turquoise; left:0px; top:0px;}
+  25%  {background-color:sapphire; left:200px; top:0px;}
+  50%  {background-color:Navy; left:200px; top:200px;}
+  75%  {background-color:Dark sapphire; left:0px; top:200px;}
+  100% {background-color:Turquoise; left:0px; top:0px;}
 }
