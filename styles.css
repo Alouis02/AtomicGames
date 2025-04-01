@@ -30,7 +30,6 @@ hr {
     text-align: center;
     height: 5px;
 }
-
 hr::after {
     background: #fff;
     padding: 0 4px;
@@ -54,12 +53,20 @@ menu {
     gap: 1em;
 }
 
+/* Main styling */
+main {
+    min-height: 80vh; /* Ensures the main content takes up most of the viewport */
+    padding: 20px; /* Adds some spacing inside the main area */
+}
+
 /* Footer styling */
-footer { 
+footer {
     display: flex;
     justify-content: center;
-    padding: 5px;
+    text-align: center;
+    padding: 20px;
     background-color: #004f54; /* Add background color to footer */
     color: white; /* Text color */
     margin-top: auto; /* Pushes the footer to the bottom */
+    width: 100%; /* Ensures the footer spans the full width */
 }
