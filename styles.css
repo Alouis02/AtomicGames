@@ -2,7 +2,7 @@
 body { 
     margin: 0;
     padding: 0;
-    background: rgb(10, 128, 133); /* Set background color */
+    background: rgb(10, 128, 137); /* Set background color */
     text-align: left;
     min-height: 100%; /* Ensure body takes up full height */
     display: flex; /* Use flexbox layout */
@@ -23,7 +23,6 @@ nav {
 }
 
 /* Styling for horizontal rule */
-/* Styling for horizontal rule */
 hr {
     border: none;
     border-top: 3px double #333;
@@ -39,10 +38,19 @@ hr::after {
     top: -13px;
 }
 
+/* Menu styling */
+menu {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    gap: 1em;
+}
+
 /* Main styling */
 main {
-    min-height: 80vh; /* Ensures the main content takes up most of the viewport */
-    padding: 20px; /* Adds some spacing inside the main area */
+    min-height: 200vh; /* Ensures the main content takes up most of the viewport */
+    padding: 10px; /* Adds some spacing inside the main area */
 }
 
 /* Footer styling */
