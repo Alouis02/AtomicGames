@@ -63,7 +63,7 @@ hr {
 }
 
 hr::after {
-    background: #fff;
+    background: #1b1b2f;
     padding: 0 4px;
     position: relative;
     top: -13px;
@@ -80,7 +80,7 @@ menu {
 
 /* Main content area styling */
 main {
-    min-height: 200vh; /* Ensures the main content takes up most of the viewport */
+    min-height: 200vh;
     padding: 20px;
 }
 
@@ -112,19 +112,93 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background-color: #0f3460;
+    background: #1b1b2f;
     color: white;
     margin-top: auto;
-  	background-color: 0f3460;
-  	animation-name: example;
-  	animation-duration: 5s;
-  	animation-iteration-count: infinite;
+    animation: colorChange 5s infinite;
 }
 
-@keyframes example {
-  0%   {background-color:Turquoise; left:0px; top:0px;}
-  25%  {background-color:sapphire; left:200px; top:0px;}
-  50%  {background-color:Navy; left:200px; top:200px;}
-  75%  {background-color:Dark sapphire; left:0px; top:200px;}
-  100% {background-color:Turquoise; left:0px; top:0px;}
+@keyframes colorChange {
+  0% {background-color: Turquoise;}
+  25% {background-color: DeepSkyBlue;}
+  50% {background-color: RoyalBlue;}
+  75% {background-color: Navy;}
+  100% {background-color: MidnightBlue;}
+}
+
+/* Generic box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #1b1b2f;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Layout columns */
+.leftcolumn, .rightcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    width: 25%;
+    background: #1b1b2f;
+    padding-left: 20px;
+}
+
+/* Card effect */
+.card {
+    background: #1b1b2f;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
 }
