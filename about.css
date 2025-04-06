@@ -237,7 +237,7 @@ footer {
 
 .linkedin {
   background-color: #1DA1F2;
-  margin: 0 4px;
+  margin: 0 8px;
   padding: 8px 40px;
   border: none;
   border-radius: 100px;
@@ -247,7 +247,7 @@ footer {
 }
 .gmail {
   background-color: #E1306C;
-  margin: 0 4px;
+  margin: 0 8px;
   padding: 8px 40px;
   border: none;
   border-radius: 100px;
@@ -257,5 +257,5 @@ footer {
 }
         
 .follow-button i {         
-  margin-right: 8px;
+  margin-right: 5px;
 }
