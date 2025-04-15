@@ -238,7 +238,7 @@ footer {
 .linkedin {
   background-color: #1DA1F2;
   margin: 0 8px;
-  padding: 8px 40px;
+  padding: 8px 25px;
   border: none;
   border-radius: 100px;
   cursor: pointer;
@@ -248,7 +248,7 @@ footer {
 .gmail {
   background-color: #E1306C;
   margin: 0 8px;
-  padding: 8px 40px;
+  padding: 8px 25px;
   border: none;
   border-radius: 100px;
   cursor: pointer;
