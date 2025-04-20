@@ -11,12 +11,73 @@ body {
     flex-direction: column;
 }
 
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* Navigation links styling */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #e94560;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
 /* Navigation bar styling */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0f3460; /* Dark blue navigation bar */
+    background: #151E3D; /* Dark blue navigation bar */
     padding: 5px;
     position: fixed;
     top: 0;
@@ -26,10 +87,10 @@ nav {
 
 /* Navigation buttons */
 nav button {
-    background: #16213e;
+    background: #1b1b2f;
     color: white;
-    margin: 0 4px;
-    padding: 8px 20px;
+    margin: 0 2px;
+    padding: 4px 15px;
     border: none;
     border-radius: 100px;
     cursor: pointer;
@@ -45,6 +106,25 @@ header {
     text-align: center;
     padding: 60px 20px;
     background: #0f3460;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+
+section.hero-animation {
+  animation: fadeSlideUp 3s ease-in-out infinite;
 }
 
 header h1 {
@@ -237,20 +317,20 @@ footer {
 
 .linkedin {
   background-color: #1DA1F2;
-  margin: 0 8px;
+  margin: 0 2px;
   padding: 8px 25px;
   border: none;
-  border-radius: 100px;
+  border-radius: 80px;
   cursor: pointer;
   transition: background 0.3s;
   display: flex;
 }
 .gmail {
   background-color: #E1306C;
-  margin: 0 8px;
+  margin: 0 2px;
   padding: 8px 25px;
   border: none;
-  border-radius: 100px;
+  border-radius: 80px;
   cursor: pointer;
   transition: background 0.3s;
   display: flex;

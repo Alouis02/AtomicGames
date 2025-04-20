@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script>
         // Function to handle navigation
-        function goToPage(pageUrl) {
-            window.location.href = pageUrl; // Redirects to the specified page
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
         }
     </script>
 </head>
 <body>
     <main>
       <header>
-        <section>
-          <h1 style="color: white;">Atomic Games</h1>
-          <p style="color: white;"></p>
+        <section class="hero-animation">
+                <h1 style="color: white;">Atomic Games</h1>
+                <p style="color: white;"></p>
         </section>
       </header>
       <hr/>
@@ -30,7 +31,11 @@
                         <div class="img-container">
                             <img src="images/aboutme.jpg" alt="AboutMe" style="width:300px;height:300px;">
                         </div>
-                        <p>My name is Alex Louis, and I am actively engaged in designing and developing 2D and 3D games using C# on the Unity platform. I take great pride in being a dedicated professional and achieving the prestigious rank of Eagle Scout, the highest distinction in the Boy Scouts of America. I possess strong initiative, dynamic leadership skills, and meticulous attention to detail, allowing me to excel both as a collaborative team player and an independent contributor.</p>
+                        <p>My name is Alex Louis, and I am actively engaged in designing and developing 2D and 3D games. I enjoy combining creativity with technical skills to bring interactive and immersive game experiences to life.</p>
+			<p>I take great pride in being a dedicated professional and achieving the prestigious rank of Eagle Scout, the highest distinction in the Boy Scouts of America. This accomplishment reflects my commitment, perseverance, and drive to achieve excellence in all aspects of life.</p>
+			<p>I possess strong initiative, dynamic leadership skills, and attention to detail. These qualities allow me to excel both as a collaborative team player and as a focused, independent contributor across any project I take on.
+
+</p>
                     </div>
                 </div>
                 <div class="rightcolumn">
@@ -55,12 +60,18 @@
             <section class="logo">
                 <img src="images/AtomicGameslogo.jpg" alt="Icon" style="width: 50px; height: 50px; margin: auto; display: block;">
             </section>
-            <li>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
                 <button id="home" onclick="goToPage('home.html')">Home</button>
                 <button id="about" onclick="goToPage('about.html')">About</button>
-            </li>
+            </ul>
         </menu>
     </nav>
+   	<!-- Footer -->
     <footer>
         <p>&copy; 2025 Atomic Games. All Rights Reserved.</p>
     </footer>
