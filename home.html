@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,32 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script>
-        // Function to handle navigation
-        function goToPage(pageUrl) {
-            window.location.href = pageUrl; // Redirects to the specified page
+        // Function to handle toggle menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
         }
     </script>
 </head>
+
 <body>
     <main>
-      <header>
-        <section>
-          <h1 style="color: white;">Atomic Games</h1>
-          <p style="color: white;"></p>
-        </section>
-      </header>
-      <hr/>
+        <header>
+            <section class="hero-animation">
+                <h1 style="color: white;">Atomic Games</h1>
+                <p style="color: white;"></p>
+            </section>
+        </header>
+        <hr />
         <article>
             <section>
                 <div class="leftcolumn">
                     <div class="card">
                         <h2 style="color: white;">Home</h2>
                         <h5>Games Coming soon!!!!!! 2025</h5>
-                        <p><h3>The Archer</h3></p>
+                        <p>
+                        <h3>The Archer</h3>
+                        </p>
                         <div class="img-container">
                             <img src="images/TheArcher.png" alt="TheArcher" style="width:250px;height: 250pxpx;">
                         </div>
@@ -56,14 +61,22 @@
             <section class="logo">
                 <img src="images/AtomicGameslogo.jpg" alt="Icon" style="width: 50px; height: 50px; margin: auto; display: block;">
             </section>
-            <li>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
                 <button id="home" onclick="goToPage('home.html')">Home</button>
                 <button id="about" onclick="goToPage('about.html')">About</button>
-            </li>
+            </ul>
         </menu>
     </nav>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Atomic Games. All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>
