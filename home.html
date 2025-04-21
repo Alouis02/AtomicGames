@@ -13,6 +13,11 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
+
+        // Function to go to a different page
+        function goToPage(page) {
+        window.location.href = page;
+        }
     </script>
 </head>
 
@@ -67,8 +72,8 @@
                 <div class="line"></div>
             </div>
             <ul class="nav-links">
-                <button id="home" onclick="goToPage('home.html')">Home</button>
-                <button id="about" onclick="goToPage('about.html')">About</button>
+                <a href="home.html"><button>Home</button></a>
+                <a href="about.html"><button>About</button></a>
             </ul>
         </menu>
     </nav>
