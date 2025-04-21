@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script>
-        // Function to handle navigation
+        // Function to handle toggle menu
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
+        }
+        
+        // Function to go to a different page
+        function goToPage(page) {
+        window.location.href = page;
         }
     </script>
 </head>
@@ -32,10 +37,8 @@
                             <img src="images/aboutme.jpg" alt="AboutMe" style="width:300px;height:300px;">
                         </div>
                         <p>My name is Alex Louis, and I am actively engaged in designing and developing 2D and 3D games. I enjoy combining creativity with technical skills to bring interactive and immersive game experiences to life.</p>
-			<p>I take great pride in being a dedicated professional and achieving the prestigious rank of Eagle Scout, the highest distinction in the Boy Scouts of America. This accomplishment reflects my commitment, perseverance, and drive to achieve excellence in all aspects of life.</p>
-			<p>I possess strong initiative, dynamic leadership skills, and attention to detail. These qualities allow me to excel both as a collaborative team player and as a focused, independent contributor across any project I take on.
-
-</p>
+			            <p>I take great pride in being a dedicated professional and achieving the prestigious rank of Eagle Scout, the highest distinction in the Boy Scouts of America. This accomplishment reflects my commitment, perseverance, and drive to achieve excellence in all aspects of life.</p>
+			            <p>I possess strong initiative, dynamic leadership skills, and attention to detail. These qualities allow me to excel both as a collaborative team player and as a focused, independent contributor across any project I take on.</p>
                     </div>
                 </div>
                 <div class="rightcolumn">
@@ -66,8 +69,8 @@
                 <div class="line"></div>
             </div>
             <ul class="nav-links">
-                <button id="home" onclick="goToPage('home.html')">Home</button>
-                <button id="about" onclick="goToPage('about.html')">About</button>
+                <a href="home.html"><button>Home</button></a>
+                <a href="about.html"><button>About</button></a>
             </ul>
         </menu>
     </nav>
