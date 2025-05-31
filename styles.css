@@ -335,7 +335,69 @@ footer {
   transition: background 0.3s;
   display: flex;
 }
+
+.github {
+  background-color: #812ac9;
+  margin: 0 2px;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+}
         
 .follow-button i {         
   margin-right: 5px;
+}
+
+.play-button {
+  display: inline-block;
+  background-color: #e94560;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.play-button:hover {
+  background-color: #c7344f;
+  transform: scale(1.05);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftcolumn, .rightcolumn {
+  flex: 1;
+  max-width: 25%;
+}
+
+/* Stack columns on smaller screens and reorder */
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .rightcolumn {
+    order: 0; /* move to the top */
+  }
+
+  .leftcolumn {
+    order: 0;
+  }
+
+  .leftcolumn, .rightcolumn {
+    max-width: 100%;
+  }
+}
+
+.rightcolumn {
+  padding-top: 50px;
 }
