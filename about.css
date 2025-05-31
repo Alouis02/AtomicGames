@@ -335,6 +335,16 @@ footer {
   transition: background 0.3s;
   display: flex;
 }
+.github {
+  background-color: #812ac9;
+  margin: 0 2px;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+}
         
 .follow-button i {         
   margin-right: 5px;
