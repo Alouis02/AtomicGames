@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script>
+        window.onload = function () {
+            const videoLink = document.querySelector('.video-link');
+            const video = videoLink.querySelector('video');
+
+            videoLink.addEventListener('mouseenter', () => {
+                video.play();
+            });
+
+             
+            videoLink.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            }); 
+                
+        };
+
         // Function to handle toggle menu
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
@@ -32,31 +48,33 @@
         <hr />
         <article>
             <section>
+
+                <!--Jump-->
                 <div class="leftcolumn">
                     <div class="card">
                         <h2>Home</h2>
-                        <h3>Jump</h3>
-                        <div class="img-container">
-                            <img src="images/Jump_thumbnail.jpg" alt="Jump" style="width:250px; height:250px;">
-                        </div>
-                        <div>
-                            <a href="https://alouis02.itch.io/jump" class="play-button" target="_blank" rel="noopener noreferrer">Play</a>
-
-                        </div>
+                        <a href="https://alouis02.itch.io/jump" class="video-link">
+                            <div class="hover-container">
+                                <video class="hover-video" src="images/mouseover.mp4" muted loop style="width:170px; height:170px;"></video>
+                                <div class="hover-text">Jump</div>
+                            </div>
+                        </a> 
                     </div>
                 </div>
+                
+                <!--The Archer-->
                 <div class="rightcolumn">
                     <div class="card">
-                        <h3>The Archer ~ Coming Soon!!!</h3>
-                        <div class="img-container">
-                            <img src="images/TheArcher.png" alt="The Archer" style="width:250px; height:250px;">
+                        <h3>Coming Soon!!</h3>
+                        <div>
+                            <img src="images/TheArcher.png" alt="The Archer" style="width:250px; height:300px;">
                         </div>
                     </div>
                 </div>
             </section>
         </article>
     </main>
-    <!-- Navigation -->
+    <!--Navigation-->
     <nav>
         <menu>
             <section class="logo">
@@ -69,12 +87,12 @@
             </div>
             <ul class="nav-links">
                 <a href="home.html"><button>Home</button></a>
-                <a href="about.html"><button>About</button></a>
+                <a href="about.html"><button>About Me</button></a>
             </ul>
         </menu>
     </nav>
 
-    <!-- Footer -->
+    <!--Footer-->
     <footer>
         <p>&copy; 2025 Atomic Games. All Rights Reserved.</p>
     </footer>
