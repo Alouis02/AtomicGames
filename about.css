@@ -349,3 +349,11 @@ footer {
 .follow-button i {         
   margin-right: 5px;
 }
+
+article {
+  float: center;
+  padding: 20px;
+  width: 70%;
+  background-color: #1b1b2f;
+  height: 300px;
+}
